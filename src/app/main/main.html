@@ -1,0 +1,13 @@
+<div ng-controller="mainCtrl as main">
+  <h2>Input with mask</h2>
+  <input type="text"
+         ng-model="main.inputVar"
+         jb-mask="{{main.mask}}">
+  <h3>Mask</h3>
+  <input type="text" ng-model="main.mask">
+  <h3>Model</h3>
+  <div>model: {{main.inputVar}}</div>
+  <h3>Change model</h3>
+  <input type="text" ng-model="main.testVar">
+  <button ng-click="main.clickChange()">Change model</button>
+</div>
